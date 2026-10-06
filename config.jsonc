@@ -1,0 +1,10 @@
+{
+  "name": "Eternal Camino",
+  "description": "A travel companion: a world map you colour in as you go, live currency conversion, phrases, plugs, culture, love languages, with in-depth pages for every country — people, history, struggles and what to pray for. 10% to humanitarian work.",
+  "site": {
+    "installCommand": "npm install",
+    "buildCommand": "npm run build",
+    "serveCommand": "npm run dev",
+    "outputDirectory": "./dist"
+  }
+}

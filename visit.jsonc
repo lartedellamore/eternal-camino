@@ -1,0 +1,17 @@
+{
+  "name": "Visit",
+  "type": "object",
+  "properties": {
+    "country_key": { "type": "string", "description": "World-atlas id (ISO numeric) or n:<name> for unlabelled shapes" },
+    "country_name": { "type": "string", "description": "Display name of the country" },
+    "visited_on": { "type": "string", "format": "date", "description": "When you were there (optional)" },
+    "note": { "type": "string", "description": "A memory, a name, a meal" }
+  },
+  "required": ["country_key", "country_name"],
+  "rls": {
+    "create": true,
+    "read": { "created_by": "{{user.email}}" },
+    "update": { "created_by": "{{user.email}}" },
+    "delete": { "created_by": "{{user.email}}" }
+  }
+}
